@@ -31,10 +31,9 @@ upload files  #conected to employees
 
 list of all uploaded files #for extra information for the users
 
-
 ```
 
-##Contributing
+## Contributing
 
-The project is still in progres, so please don't hesitate to open an issue or pull request.  
+The project is still in progress, so please don't hesitate to open an issue or pull request.  
 Before making changes, please open an issue first to discuss what you would like to change.
