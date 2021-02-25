@@ -19,7 +19,7 @@ a {
 	margin-left:232px
 	}
 	}
-.navbar.fixed-left{
+.navbar.fixed-left {
 	position:fixed;
 	top:0;
 	left:0;
@@ -43,10 +43,10 @@ a {
 	flex-direction:column;
 	width:100%
 	}
-.navbar.fixed-left .navbar-collapse .navbar-nav .nav-item{
+.navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .nav-item dropdown {
 	width:100%
 	}
-.navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+.navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .nav-item dropdown {
 	top:0
 	}
 	}
@@ -61,7 +61,7 @@ a {
 	border-right:none;
 	vertical-align:baseline
 	}
-.navbar.fixed-left .navbar-nav .nav-item{
+.navbar.fixed-left .navbar-nav .nav-item .nav-item dropdown{
 	left:100%
 	}
 	}

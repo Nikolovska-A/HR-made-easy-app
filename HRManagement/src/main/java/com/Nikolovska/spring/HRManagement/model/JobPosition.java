@@ -1,10 +1,12 @@
 package com.Nikolovska.spring.HRManagement.model;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -16,8 +18,8 @@ public class JobPosition {
 	private long id;
 	private String description;
 	
-    @OneToOne(mappedBy = "job_position")
-    private Employee employee;
+    @OneToMany(mappedBy = "job_position")
+    private Set<Employee> employee;
 	
 	
 	public JobPosition() {

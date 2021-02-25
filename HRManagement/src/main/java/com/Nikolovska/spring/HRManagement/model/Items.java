@@ -36,12 +36,7 @@ public class Items {
     public Items(String type){
         this.type = type;
       }
-      
-//      public Items(String type, Set<Employee> employee){
-//        this.type = type;
-//        this.employee = employee;
-//      }
-//	
+	
 	public long getId() {
 		return id;
 	}
@@ -55,12 +50,5 @@ public class Items {
 		this.type = type;
 	}
 	
-//	public Set<Employee> getEmployee() {
-//		return employee;
-//		  }
-//		  
-//    public void setEmployee(Set<Employee> employee) {
-//		 this.employee = employee;
-//		  }
 
 }

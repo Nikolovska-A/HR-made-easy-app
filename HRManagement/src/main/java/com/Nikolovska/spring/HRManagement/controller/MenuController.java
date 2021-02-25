@@ -9,10 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.Nikolovska.spring.HRManagement.model.JobPosition;
-import com.Nikolovska.spring.HRManagement.model.Employee;
 import com.Nikolovska.spring.HRManagement.model.Items;
 import com.Nikolovska.spring.HRManagement.service.JobPositionService;
-import com.Nikolovska.spring.HRManagement.service.EmployeeService;
 import com.Nikolovska.spring.HRManagement.service.ItemsService;
 
 @Controller

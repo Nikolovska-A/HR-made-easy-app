@@ -18,7 +18,7 @@ height: 370px;
 margin-top: auto;
 margin-bottom:20%;
 width: 400px;
-background: linear-gradient(to top, #636FA4, #E8CBC0);
+background:#deeaee;
 
 }
 
@@ -34,7 +34,7 @@ cursor: pointer;
 }
 
 .card-header h3{
-color: white;
+color: #000080;
 }
 
 .social_icon{
@@ -57,7 +57,7 @@ box-shadow: 0 0 0 0 !important;
 }
 
 .remember{
-color: white;
+color: #000080;
 }
 
 .remember input
@@ -80,9 +80,9 @@ background-color: white;
 }
 
 .links{
-color: white;
+color: #000080;
 }
 
 .links a{
 margin-left: 4px;
-}
+} 

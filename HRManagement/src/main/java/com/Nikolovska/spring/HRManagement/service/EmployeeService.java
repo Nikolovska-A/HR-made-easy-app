@@ -1,7 +1,5 @@
 package com.Nikolovska.spring.HRManagement.service;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +38,12 @@ public class EmployeeService {
 	public Optional<Employee> findById(Long id) {
 		return employeeRepository.findById(id);
 	}
-   
+	public void updateEmplpoyee(Employee employee) {
+		employeeRepository.save(employee);
+		
+	}
+	
+
 }
 
 

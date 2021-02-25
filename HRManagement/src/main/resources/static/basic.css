@@ -10,8 +10,8 @@ html, body {
     background-attachment: fixed; 
 }
 
-.table1{
-background: linear-gradient(to bottom, #fffcdc, #d9a7c7); 
+.table1 {
+background: linear-gradient(to top, #f2994a, #f2c94c);s
 
 }
 .row{
