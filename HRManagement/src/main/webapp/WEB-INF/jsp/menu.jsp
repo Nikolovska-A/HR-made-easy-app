@@ -4,7 +4,7 @@
 
 <nav
 	class="navbar fixed-left navbar-expand-md navbar-dark bg-info fixed-top">
-	<a class="navbar-brand" href>HR Made Easy</a>
+	<a class="navbar-brand" href><h3>HR Made Easy</h3></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarsExampleDefault"
 		aria-controls="navbarsExampleDefault" aria-expanded="false"
@@ -34,6 +34,7 @@
 
 	</div>
 </nav>
+
 
 
 

@@ -5,25 +5,32 @@ The project is a Java spring boot application.
 
 ## Installation
 
-Download the project using this [link] (https://github.com/Nikolovska-A/HR-made-easy-app)
+Download the project using this [link]( https://github.com/Nikolovska-A/HR-made-easy-app)
 
 ```hr made-easy-app install```
 
 ## Usage
-
-import the project to eclipse
+```
+import the project to eclipse 
 
 run the application
 
 go to localhost:9000
 
 login to the application # needs username and password
+
 create employee profile #for new employees
+
 see the list of all employees #update and see details
+
 create vacations for employees #from-to date, calculate days
+
 see the list of all vacations #update and delete
+
 upload files  #conected to employees
+
 list of all uploaded files #for extra information for the users
+
 
 ```
 

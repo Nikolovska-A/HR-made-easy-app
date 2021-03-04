@@ -25,7 +25,7 @@
 
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/basic.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/navbar.css" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/login.css" />
+<%-- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/login.css" /> --%>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/modal.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/search.css" />
 

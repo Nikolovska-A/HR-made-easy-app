@@ -61,5 +61,14 @@ public class HrManagementApplication {
 		job_positionRepo.saveAll(job_position);	
 	}
 	
+//	@PostConstruct
+//	public void createUser() {
+//		List<Employee> employee = new ArrayList<Employee>();
+////		Long id = new Long();
+//		JobPosition job_position = new JobPosition(4, "Human resources specialist");
+//		employee.add(new Employee("EmployeeNameHR", "EmployeeSurnameHR", "employee", "employee123",job_position ));
+//		employeeRepo.saveAll(employee);
+//	}
+	
 }
 

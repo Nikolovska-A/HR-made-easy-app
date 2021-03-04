@@ -228,6 +228,17 @@ public class Employee {
 	public void setItems(List<Items> items) {
 		this.items = items;
 	}
+	
+	public Employee(String name, String surname, String username, String password, JobPosition job_position ) {
+//		this.id = id;
+		this.name = name;
+		this.surname = surname;
+		this.username = username;
+		this.password = password;
+		this.job_position = job_position;
+		
+	}
+	
 
 	@Override
 	public boolean equals(Object obj) {

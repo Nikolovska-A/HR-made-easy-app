@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-html,body{
+html, .login{
+/* background-image: url("background4.jpg"); */
+/* background: linear-gradient(to left, #83a4d4, #b6fbff); */
+background: linear-gradient(to top, #e0eafc, #cfdef3);
+background-position: center; 
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -18,14 +22,14 @@ height: 370px;
 margin-top: auto;
 margin-bottom:20%;
 width: 400px;
-background:#deeaee;
+background:#a7c7d1;
 
 }
 
 .social_icon span{
 font-size: 60px;
 margin-left: 10px;
-color: #00ffff;
+color: #1cb351;
 }
 
 .social_icon span:hover{
@@ -34,7 +38,7 @@ cursor: pointer;
 }
 
 .card-header h3{
-color: #000080;
+color: #000000;
 }
 
 .social_icon{
@@ -45,7 +49,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #00ffff;
+background-color: #1cb351;
 color: black;
 border:0 !important;
 }
@@ -57,7 +61,7 @@ box-shadow: 0 0 0 0 !important;
 }
 
 .remember{
-color: #000080;
+color: #000000;
 }
 
 .remember input
@@ -70,7 +74,7 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: #00ffff;
+background-color: #1cb351;
 width: 100px;
 }
 
@@ -80,7 +84,7 @@ background-color: white;
 }
 
 .links{
-color: #000080;
+color: #000000;
 }
 
 .links a{

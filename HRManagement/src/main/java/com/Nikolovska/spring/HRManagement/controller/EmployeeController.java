@@ -83,11 +83,7 @@ public class EmployeeController {
 
 	@RequestMapping(path = "/new_employee/{id}", method = RequestMethod.GET)
 	public String getEmployeeByName(@PathVariable Long id, Model model) {
-//			if (model.getAttribute("id") == null) {
-//				model.addAttribute("errorMessage", "Not such employee!");
-//				return "redirect:/";
-//			} else {
-//				Employee employee = (Employee)model.getAttribute("employee");
+
 		Optional<Employee> optEmployee = employeeService.findById(id);
 		Employee employee = optEmployee.get();
 		model.addAttribute("employee_id", id);
@@ -103,6 +99,8 @@ public class EmployeeController {
 		model.addAttribute("end_date", employee.getEnd_date());
 		model.addAttribute("salary", employee.getSalary());
 		model.addAttribute("bonus", employee.getBonus());
+		model.addAttribute("username", employee.getUsername());
+		model.addAttribute("password", employee.getPassword());
 		JobPosition job_position_tmp = employee.getJob_position();
 		List<JobPosition> job_position = jobpositionService.getAllPositions();
 

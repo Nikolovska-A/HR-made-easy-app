@@ -9,7 +9,7 @@
 
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
-				<h2>Employee vacation</h2>
+				<h2>Employee vacation <i class="fas fa-umbrella-beach"></i></h2>
 				<div class="progress">
 					<div class="progress-bar progress-bar-info progress-bar-striped bg-success"
 						role="progressbar" aria-valuenow="100" aria-valuemin="0"
@@ -54,7 +54,7 @@
 				<button type="submit" class="btn btn-success btn-block"
 					type="submit" name="save">Save>></button>
 			</div>
-		</div>
+		</div> </br>
 		
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">

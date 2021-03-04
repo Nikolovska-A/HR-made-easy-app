@@ -56,13 +56,6 @@ public class VacationsController {
 
 		} else {
 
-//			for (Date date = date_start.getTime(); date_start.before(end_date); date_start.add(Calendar.DATE, 1)) {
-//				int targetDay = date_start.get(Calendar.DAY_OF_WEEK);
-//				if (targetDay != 6 && targetDay != 7) {
-//					vacations_days++;
-//				}
-//			}
-
 			vacations_days = CalculateVacationDays(date_start, vacations.getEnd_date(), vacations_days, 1);
 
 			if (vacations_days <= 23) {
@@ -96,13 +89,6 @@ public class VacationsController {
 		Calendar date_start = Calendar.getInstance();
 		date_start = (Calendar) vacations.getStart_date().clone();
 		Calendar end_date = vacations.getEnd_date();
-//
-//		for (Date date = date_start.getTime(); date_start.before(end_date); date_start.add(Calendar.DATE, 1)) {
-//			int targetDay = date_start.get(Calendar.DAY_OF_WEEK);
-//			if (targetDay != 6 && targetDay != 7) {
-//				vacations_days--;
-//			}
-//		}
 
 		vacations_days = CalculateVacationDays(date_start, vacations.getEnd_date(), vacations_days, 2);
 

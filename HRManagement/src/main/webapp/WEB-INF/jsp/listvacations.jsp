@@ -2,22 +2,23 @@
 <%@ include file="common/footer.jspf"%>
 <%@ include file="menu.jsp"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<input type="text" id="myInput" onkeyup="myFunction()"
+	placeholder="Search for names.." title="Type in a name"><i class="fas fa-search"></i>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-<table id="myTable" class= "table-hover table-light table-bordered table-responsive-mds">
-  <thead class="table1">
+<table id="myTable"
+	class="table-hover table-light table-stripped table-responsive-mds">
+	<thead class="table2">
 		<tr>
-			<th>ID</th>
-			<th>First name</th>
-			<th>Last name</th>
-			<th>Start date</th>
-			<th>End date</th>
-			<th></th>
-			<th></th>
+			<td>ID</th>
+			<td>First name</td>
+			<td>Last name</td>
+			<td>Start date</td>
+			<td>End date</td>
+			<td>Actions</td>
+			<td></td>
 		</tr>
 	</thead>
 	<tbody>
@@ -30,14 +31,14 @@
 						value="${vacations.start_date.time}"></fmt:formatDate></th>
 				<th><fmt:formatDate type="date"
 						value="${vacations.end_date.time}"></fmt:formatDate></th>
-				<td><a type="button" class="btn btn-success"
-					href="/vacations/${vacations.id}">Update</a></td>
-				<td>
+				<th><a type="button" class="btn btn-success btn-sm"
+					href="/vacations/${vacations.id}">Update</a></th>
+				<th>
 					<div class="text-center">
 						<a href="#myModal" type="button"
-							class="btn btn-danger trigger-btn" data-toggle="modal">Delete</a>
+							class="btn btn-danger trigger-btn btn-sm" data-toggle="modal">Delete</a>
 					</div>
-				</td>
+				</th>
 				<div id="myModal" class="modal fade">
 					<div class="modal-dialog modal-confirm">
 						<div class="modal-content">

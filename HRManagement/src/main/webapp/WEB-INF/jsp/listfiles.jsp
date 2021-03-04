@@ -6,16 +6,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <input type="text" id="myInput" onkeyup="myFunction()"
-	placeholder="Search for names.." title="Type in a name">
+	placeholder="Search for names.." title="Type in a name"><i class="fas fa-search"></i>
 
 <table id="myTable"
-	class="table-hover table-light table-bordered table-responsive-mds">
-	<thead class="table1">
+	class="table-hover table-light table-stripped table-responsive-mds">
+	<thead class="table3">
 		<tr>
-			<th>First name</th>
-			<th>Last name</th>
-			<th>Description</th>
-			<th></th>
+			<td>First name</td>
+			<td>Last name</td>
+			<td>Description</td>
+			<td>Download</td>
 
 		</tr>
 	</thead>
@@ -26,7 +26,7 @@
 				<th>${files.employee.getSurname()}</th>
 				<th>${files.getName()}</th>
 				
-				<th><a  target = "_blank" type="button" class= "btn btn-outline-danger"
+				<th><a  target = "_blank" type="button" class= "btn btn-outline-danger btn-sm"
 						href= "${files.getUrl()}"><i class="fa fa-download"></i> Download</a></th>
 
 			</tr>

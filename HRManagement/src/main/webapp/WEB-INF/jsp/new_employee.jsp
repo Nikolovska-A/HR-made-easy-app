@@ -4,11 +4,11 @@
 
 
 <form class="tabela" method="post">
-	<div class="container">
+	<div class="container" >
 
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
-				<h2>Employee</h2>
+				<h2>Employee <i class="far fa-id-card"></i></h2>
 				<div class="progress">
 					<div class="progress-bar progress-bar-info progress-bar-striped"
 						role="progressbar" aria-valuenow="100" aria-valuemin="0"
@@ -30,6 +30,22 @@
 				Last Name* <input type="text" id="surname" name="surname"
 					class="form-control input-group-lg" placeholder="Last Name"
 					required="required" value="${surname}" ${disabled}>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="offset-md-2 col-lg-6">
+				<input type="text" id="username" name="username"
+					class="form-control input-group-lg" placeholder="Username"
+					value="${username}" style= "display:none" ${disabled}>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="offset-md-2 col-lg-6">
+				<input type="text" id="password" name="password"
+					class="form-control input-group-lg" placeholder="Password"
+					 value="${password}" style= "display:none" ${disabled}>
 			</div>
 		</div>
 
@@ -203,7 +219,7 @@
 			<div class="offset-md-2 col-lg-6">
 				<button type="submit" class="btn btn-primary btn-block"
 					type="submit" name="button" ${disabled}>Save
-					>></button>
+					>></button> </br>
 			</div>
 		</div>
 

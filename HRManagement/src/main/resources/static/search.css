@@ -3,12 +3,12 @@
 }
 
 #myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
+  background-position: right center;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: 23px 20px;
+  width: 30%;
   font-size: 16px;
-  padding: 10px 20px 10px 40px;
+  padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
@@ -17,19 +17,42 @@
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
-  font-size: 15px;
+  font-size: 14px;
 }
 
-
-#myTable th, #myTable th {
+#myTable th, #myTable td {
   text-align: left;
-  padding: 12px;
+  padding: 6px;
 }
 
 #myTable tr {
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.table1, #myTable tr:hover {
+#myTable .table1 td {
+	background: linear-gradient(to bottom, #1CB5E0, #000046);
+	height: 50px;
+	font-size: 16px;
+	font-weight:bold;
+	color: white;
+}
+
+#myTable .table2 td {
+	background: linear-gradient(to bottom, #52c234, #061700); 
+	height: 50px;
+	font-size: 16px;
+	font-weight:bold;
+	color: white;
+}
+
+#myTable .table3 td {
+	background: linear-gradient(to bottom, #fffbd5, #b20a2c); 
+	height: 50px;
+	font-size: 16px;
+	font-weight:bold;
+	color: white;
+}
+
+#myTable tr:hover {
   background-color: #c0c0c0;
 }
