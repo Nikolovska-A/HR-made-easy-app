@@ -9,7 +9,7 @@
 	placeholder="Search for names.." title="Type in a name"><i class="fas fa-search"></i>
 
 <table id="myTable"
-	class="table-hover table-light table-stripped table-responsive-mds">
+	class="table-hover table-light table-stripped table-responsive-mds tabela1">
 	<thead class="table1">
 		<tr>
 			<td>ID</th>
@@ -35,7 +35,7 @@
 						onclick="location.href='/new_employee/view/${employee.id}'">See details</button></th>
 				<th><button type="button" class="btn btn-outline-warning btn-sm"
 						onclick="location.href='/new_employee/${employee.id}'">Update</button></th>
-			<tr />
+			</tr>
 		</c:forEach>
 	</tbody>
 </table>

@@ -9,7 +9,7 @@
 	placeholder="Search for names.." title="Type in a name"><i class="fas fa-search"></i>
 
 <table id="myTable"
-	class="table-hover table-light table-stripped table-responsive-mds">
+	class="table-hover table-light table-stripped table-responsive-mds tabela3">
 	<thead class="table3">
 		<tr>
 			<td>First name</td>

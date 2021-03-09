@@ -7,8 +7,8 @@
   background-repeat: no-repeat;
   background-size: 23px 20px;
   width: 30%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
+  font-size: 14px;
+  padding: 10px 20px 10px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
@@ -27,6 +27,26 @@
 
 #myTable tr {
   border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid grey;
+}
+#myTable tbody tr:nth-child(n):hover {
+  background-color: #BFC0C2;
+}
+
+.tabela1  tbody > :nth-of-type(even) {
+  background: #bee3f8; !important
+}
+
+.tabela2 tbody > :nth-of-type(even) {
+  background: #a6f9c2; !important
+}
+
+.tabela3 tbody > :nth-of-type(even) {
+  background: #eeb6a8; !important
 }
 
 #myTable .table1 td {
@@ -53,6 +73,6 @@
 	color: white;
 }
 
-#myTable tr:hover {
+/* #myTable tr:hover {
   background-color: #c0c0c0;
-}
+} */

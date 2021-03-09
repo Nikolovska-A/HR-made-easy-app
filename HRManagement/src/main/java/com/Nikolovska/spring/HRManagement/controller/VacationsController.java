@@ -115,7 +115,7 @@ public class VacationsController {
 		model.addAttribute("employeeTmp", employeeTmp);
 		model.addAttribute("readonly", "readonly");
 		model.addAttribute("start_date", start_date);
-		model.addAttribute("end_date", end_date);	
+		model.addAttribute("end_date", end_date);
 		return "vacations";
 	}
 
@@ -136,8 +136,6 @@ public class VacationsController {
 		vacationsService.updateVacations(vacations);
 		return "redirect:/listvacations";
 	}
-
-
 
 	@RequestMapping(path = "/listvacations", method = RequestMethod.GET)
 	public String getAllVacations(Model model) {

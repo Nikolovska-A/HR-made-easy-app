@@ -12,7 +12,6 @@ import com.Nikolovska.spring.HRManagement.model.Items;
 import com.Nikolovska.spring.HRManagement.service.JobPositionService;
 import com.Nikolovska.spring.HRManagement.service.ItemsService;
 
-
 @Controller
 @SessionAttributes(names = "employee")
 public class MenuController {
@@ -22,7 +21,6 @@ public class MenuController {
 
 	@Autowired
 	private JobPositionService jobpositionService;
-
 
 	@GetMapping(path = "/menu")
 	public String getMenu() {
@@ -37,6 +35,5 @@ public class MenuController {
 		model.addAttribute("job_position", job_position);
 		return "new_employee";
 	}
-
 
 }

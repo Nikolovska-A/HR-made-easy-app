@@ -47,8 +47,6 @@ public class EmployeeController {
 	@Autowired
 	private JobPositionService jobpositionService;
 
-
-
 	@RequestMapping(path = "/listemployees", method = RequestMethod.GET)
 	public String getEmployees(Model model) {
 //			if (model.getAttribute("id") == null) {
@@ -65,7 +63,7 @@ public class EmployeeController {
 	@RequestMapping(path = "/new_employee", method = RequestMethod.POST)
 	public String registerEmployee(@RequestBody String body, Employee employee, Model model) {
 		employee = employeeService.saveEmployee(employee);
-		
+
 		return "redirect:/menu";
 	}
 
@@ -75,9 +73,16 @@ public class EmployeeController {
 
 		model.addAttribute("vacations", vacations);
 		model.addAttribute("disabled", "disabled");
-		model.addAttribute("checkedItem", "checked");
+//		model.addAttribute("checkedItem", "checked");
 		model.addAttribute("selected", "selected");
 		getEmployeeByName(id, model);
+		Optional<Employee> optEmployee = employeeService.findById(id);
+		Employee employee = optEmployee.get();
+		List<Items> items = employee.getItems();
+		if (items != null) {
+			model.addAttribute("items", items);
+			model.addAttribute("checkedItem", "checked");
+		}
 		return "new_employee";
 	}
 
@@ -108,13 +113,17 @@ public class EmployeeController {
 		if (job_position != null) {
 			model.addAttribute("job_position", job_position);
 		}
-		List<Items> items = employee.getItems();
+
+		List<Items> items = itemsService.getAllItems();
+//		model.addAttribute("items", items);
+
+//		List<Items> items = employee.getItems();
 		if (items != null) {
 			model.addAttribute("items", items);
 		}
+
 		model.addAttribute("job_position_tmp", job_position_tmp);
 		return "new_employee";
-
 	}
 
 	@RequestMapping(path = "/new_employee/{id}", method = RequestMethod.POST)

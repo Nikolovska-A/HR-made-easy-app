@@ -9,7 +9,7 @@
 	placeholder="Search for names.." title="Type in a name"><i class="fas fa-search"></i>
 
 <table id="myTable"
-	class="table-hover table-light table-stripped table-responsive-mds">
+	class="table-hover table-light table-stripped table-responsive-mds tabela2">
 	<thead class="table2">
 		<tr>
 			<td>ID</th>
@@ -35,11 +35,11 @@
 					href="/vacations/${vacations.id}">Update</a></th>
 				<th>
 					<div class="text-center">
-						<a href="#myModal" type="button"
+						<a href="#myModal${vacations.id}" type="button"
 							class="btn btn-danger trigger-btn btn-sm" data-toggle="modal">Delete</a>
 					</div>
 				</th>
-				<div id="myModal" class="modal fade">
+				<div id="myModal${vacations.id}" class="modal fade">
 					<div class="modal-dialog modal-confirm">
 						<div class="modal-content">
 							<div class="modal-header justify-content-center">

@@ -20,7 +20,7 @@
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
 				First Name* <input type="text" id="name" name="name"
-					class="form-control input-group-lg" placeholder="Firs Name"
+					class="form-control input-group-lg" placeholder="First Name"
 					required="required" value="${name}" ${disabled}>
 			</div>
 		</div>
@@ -113,8 +113,8 @@
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
 				Job position* <select class="custom-select" id="job_position.id"
-					name="job_position" ${disabled}>
-					<option selected>Select job position...</option>
+					name="job_position" required="required" ${disabled}>
+					<option value= "" selected>Select job position...</option>
 					<c:forEach items="${job_position}" var="job_position">
 						<option name="${job_position.id}" required="required"
 							value="${job_position.id}"  ${selected}
@@ -153,7 +153,7 @@
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
 				Bonus<input type="text" id="bonus" name="bonus"
-					class="form-control input-group-lg" placeholder="Bonus"
+					class="form-control input-group-lg" placeholder="Bonus" required="required"
 					value="${bonus}" ${disabled}>
 			</div>
 		</div>

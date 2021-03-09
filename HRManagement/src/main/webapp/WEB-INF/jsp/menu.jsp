@@ -29,6 +29,8 @@
 				onclick="location.href='../../upload'">Upload files</a></li>
 			<li class="nav-item"><a class="nav-link" type="submit"
 				onclick="location.href='../../listfiles'">See all files</a></li>
+			<li class="nav-item"><a class="nav-link" type="submit"
+				onclick="location.href='../../'">Log Out</a></li>
 
 		</ul>
 

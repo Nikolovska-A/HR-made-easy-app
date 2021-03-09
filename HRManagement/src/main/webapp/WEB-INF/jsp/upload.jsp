@@ -24,8 +24,8 @@
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
 				Employee <select class="custom-select" id="employee_id"
-					name="employee_id" required>
-					<option selected>Select employee...</option>
+					name="employee_id" required="required">
+					<option value= "" selected >Select employee...</option>
 					<c:forEach items="${employee}" var="employee">
 						<option name="${employee.id}" required="required"
 							value="${employee.id}" ${employee == Employee ? 'selected' : ' '}>

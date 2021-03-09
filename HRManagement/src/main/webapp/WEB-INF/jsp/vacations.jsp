@@ -21,8 +21,8 @@
 		<div class="row">
 			<div class="offset-md-2 col-lg-6">
 				Employee <select class="custom-select" id="employee_id"
-					name="employee_id" required  ${disabled}>
-					<option selected>Select employee...</option>
+					name="employee_id" required= "required"  ${disabled}>
+					<option value= "" selected>Select employee...</option>
 					<c:forEach items="${employee}" var="employee">
 						<option name="${employee.id}" 
 							value="${employee.id}"
@@ -37,7 +37,7 @@
 			<div class="offset-md-2 col-lg-6">Start date*</div>
 			<div class="offset-md-2 col-lg-6">
 				<input class="form-control" type="date" name="start_date"
-					 id="start_date" value="<fmt:formatDate value="${start_date.time}" pattern="yyyy-MM-dd" />">
+					 id="start_date" required="required" value="<fmt:formatDate value="${start_date.time}" pattern="yyyy-MM-dd" />">
 			</div>
 		</div>
 	
@@ -45,7 +45,7 @@
 			<div class="offset-md-2 col-lg-6">End date*</div>
 			<div class="offset-md-2 col-lg-6">
 				<input class="form-control" type="date" name="end_date"
-					 id="end_date" value="<fmt:formatDate value="${end_date.time}" pattern="yyyy-MM-dd" />" >
+					 id="end_date" required="required" value="<fmt:formatDate value="${end_date.time}" pattern="yyyy-MM-dd" />" >
 			</div>
 		</div>
 
